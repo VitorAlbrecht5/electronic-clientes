@@ -112,3 +112,56 @@ class PessoaJuridica extends Pessoa {
   }
 }
 
+const clientes = [];
+
+// Cenário 1: pessoa física válida.
+try {
+  const endereco = new Endereco('Rua das Flores', 100, 'Esteio', 'RS');
+  const cliente = new PessoaFisica('Ana Souza', '529.982.247-25', '1995-05-20', endereco);
+  clientes.push(cliente);
+  console.log('Pessoa física válida: cadastrada com sucesso.');
+} catch (erro) {
+  console.log('Erro no cadastro de pessoa física: ' + erro.message);
+}
+
+// Cenário 2: pessoa física inválida.
+try {
+  const endereco = new Endereco('Rua Central', 200, 'Esteio', 'RS');
+  const cliente = new PessoaFisica('Carlos Lima', '123', '1990-01-10', endereco);
+  clientes.push(cliente);
+} catch (erro) {
+  console.log('Pessoa física inválida: ' + erro.message);
+}
+
+// Cenário 3: pessoa jurídica válida. A execução continua após o erro anterior.
+try {
+  const endereco = new Endereco('Avenida Brasil', 300, 'Esteio', 'RS');
+  const cliente = new PessoaJuridica('Electronic', '11.222.333/0001-81', 'Electronic Comércio Ltda.', endereco);
+  clientes.push(cliente);
+  console.log('Pessoa jurídica válida: cadastrada com sucesso.');
+} catch (erro) {
+  console.log('Erro no cadastro de pessoa jurídica: ' + erro.message);
+}
+
+// Cenário 4: pessoa jurídica inválida.
+try {
+  const endereco = new Endereco('Rua Comercial', 400, 'Esteio', 'RS');
+  const cliente = new PessoaJuridica('Loja Beta', '123', 'Loja Beta Ltda.', endereco);
+  clientes.push(cliente);
+} catch (erro) {
+  console.log('Pessoa jurídica inválida: ' + erro.message);
+}
+
+console.log('\nCLIENTES CADASTRADOS:');
+for (const cliente of clientes) {
+  console.log('\nNome: ' + cliente.nome);
+  if (cliente instanceof PessoaFisica) {
+    console.log('CPF: ' + cliente.cpf);
+    console.log('Data de nascimento: ' + cliente.dataNascimento);
+  } else {
+    console.log('CNPJ: ' + cliente.cnpj);
+    console.log('Razão social: ' + cliente.razaoSocial);
+  }
+  const endereco = cliente.endereco;
+  console.log(`Endereço: ${endereco.logradouro}, ${endereco.numero} - ${endereco.cidade}/${endereco.uf}`);
+}
