@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17" type="device">
+  <diagram name="Cadastro de clientes" id="electronic-uml">
+    <mxGraphModel dx="1700" dy="1570" grid="1" gridSize="10" page="1" pageWidth="1700" pageHeight="1340">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="ELECTRONIC | Cadastro de clientes" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=34;fontColor=#1b2d48;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="65" y="35" width="1550" height="50" />
+        </mxCell>
+        <mxCell id="subtitle" value="UML — classes, atributos, construtores, acessores e herança" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=22;fontColor=#1b2d48;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="65" y="88" width="1550" height="38" />
+        </mxCell>
+        <mxCell id="Pessoa" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#264a73;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="160" width="680" height="264" />
+        </mxCell>
+        <mxCell id="Pessoaheader" value="Pessoa" style="rounded=0;html=1;fillColor=#e4ecf7;strokeColor=#264a73;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="160" width="680" height="55" />
+        </mxCell>
+        <mxCell id="Pessoaattrs" value="- nome: string&lt;br&gt;+ endereco: Endereco" style="rounded=0;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=21;fillColor=#ffffff;strokeColor=#264a73;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="215" width="680" height="88" />
+        </mxCell>
+        <mxCell id="Pessoamethods" value="+ constructor(nome, endereco)&lt;br&gt;+ get nome(): string&lt;br&gt;+ set nome(valor: string)" style="rounded=0;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=21;fillColor=#ffffff;strokeColor=#264a73;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="303" width="680" height="121" />
+        </mxCell>
+        <mxCell id="Endereco" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#264a73;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="950" y="160" width="680" height="264" />
+        </mxCell>
+        <mxCell id="Enderecoheader" value="Endereco" style="rounded=0;html=1;fillColor=#e4ecf7;strokeColor=#264a73;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="950" y="160" width="680" height="55" />
+        </mxCell>
+        <mxCell id="Enderecoattrs" value="+ logradouro: string&lt;br&gt;+ numero: string | number&lt;br&gt;+ cidade: string&lt;br&gt;+ uf: string" style="rounded=0;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=21;fillColor=#ffffff;strokeColor=#264a73;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="950" y="215" width="680" height="154" />
+        </mxCell>
+        <mxCell id="Enderecomethods" value="+ constructor(logradouro, numero, cidade, uf)" style="rounded=0;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=21;fillColor=#ffffff;strokeColor=#264a73;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="950" y="369" width="680" height="55" />
+        </mxCell>
+        <mxCell id="PessoaFisica" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#264a73;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="730" width="680" height="363" />
+        </mxCell>
+        <mxCell id="PessoaFisicaheader" value="PessoaFisica" style="rounded=0;html=1;fillColor=#e4ecf7;strokeColor=#264a73;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="730" width="680" height="55" />
+        </mxCell>
+        <mxCell id="PessoaFisicaattrs" value="- cpf: string&lt;br&gt;- dataNascimento: string" style="rounded=0;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=21;fillColor=#ffffff;strokeColor=#264a73;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="785" width="680" height="88" />
+        </mxCell>
+        <mxCell id="PessoaFisicamethods" value="+ constructor(nome, cpf, dataNascimento,&lt;br&gt;    endereco)&lt;br&gt;+ get cpf(): string&lt;br&gt;+ set cpf(valor: string)&lt;br&gt;+ get dataNascimento(): string&lt;br&gt;+ set dataNascimento(valor: string)" style="rounded=0;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=21;fillColor=#ffffff;strokeColor=#264a73;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="873" width="680" height="220" />
+        </mxCell>
+        <mxCell id="PessoaJuridica" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#264a73;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="950" y="730" width="680" height="363" />
+        </mxCell>
+        <mxCell id="PessoaJuridicaheader" value="PessoaJuridica" style="rounded=0;html=1;fillColor=#e4ecf7;strokeColor=#264a73;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="950" y="730" width="680" height="55" />
+        </mxCell>
+        <mxCell id="PessoaJuridicaattrs" value="- cnpj: string&lt;br&gt;- razaoSocial: string" style="rounded=0;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=21;fillColor=#ffffff;strokeColor=#264a73;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="950" y="785" width="680" height="88" />
+        </mxCell>
+        <mxCell id="PessoaJuridicamethods" value="+ constructor(nome, cnpj, razaoSocial,&lt;br&gt;    endereco)&lt;br&gt;+ get cnpj(): string&lt;br&gt;+ set cnpj(valor: string)&lt;br&gt;+ get razaoSocial(): string&lt;br&gt;+ set razaoSocial(valor: string)" style="rounded=0;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=21;fillColor=#ffffff;strokeColor=#264a73;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="950" y="873" width="680" height="220" />
+        </mxCell>
+        <mxCell id="herancaPF" edge="1" parent="1" source="PessoaFisica" target="Pessoa" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=0;strokeWidth=2;exitX=0.5;exitY=0;entryX=0.5;entryY=1;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="410" y="600" />
+              <mxPoint x="410" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="herancaPJ" edge="1" parent="1" source="PessoaJuridica" target="Pessoa" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=0;strokeWidth=2;exitX=0.5;exitY=0;entryX=0.5;entryY=1;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1290" y="600" />
+              <mxPoint x="410" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="herancaLabel" value="herança (extends)" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=22;fontColor=#1b2d48;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="465" y="546" width="400" height="38" />
+        </mxCell>
+        <mxCell id="associacao" edge="1" parent="1" source="Pessoa" target="Endereco" style="endArrow=none;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.3;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="enderecoLabel" value="endereco" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=20;fontColor=#1b2d48;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="780" y="265" width="160" height="35" />
+        </mxCell>
+        <mxCell id="multPessoa" value="0..*" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=18;fontColor=#1b2d48;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="758" y="320" width="90" height="35" />
+        </mxCell>
+        <mxCell id="multEndereco" value="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=18;fontColor=#1b2d48;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="922" y="320" width="30" height="35" />
+        </mxCell>
+        <mxCell id="legend" value="Visibilidade UML: + público | - privado | # protegido (não utilizado neste modelo)." style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=21;fontColor=#1b2d48;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="1195" width="1550" height="36" />
+        </mxCell>
+        <mxCell id="legend2" value="No JavaScript, #nome declara um campo privado; no UML ele é representado por - nome." style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=21;fontColor=#1b2d48;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="1235" width="1550" height="36" />
+        </mxCell>
+        <mxCell id="legend3" value="PessoaFisica e PessoaJuridica herdam nome e endereco de Pessoa." style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=21;fontColor=#1b2d48;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="1275" width="1550" height="36" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
