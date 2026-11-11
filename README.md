@@ -5,8 +5,6 @@
 
 O programa cadastra pessoas físicas e jurídicas usando orientação a objetos em JavaScript. PessoaFisica e PessoaJuridica herdam nome e endereço de Pessoa. Nome, CPF, data de nascimento, CNPJ e razão social usam campos privados, getters e setters.
 
-As validações lançam erros com `throw`, tratados com `try/catch`. O cliente só é adicionado à lista se a criação for concluída sem erro. Ao final, o programa mostra apenas os clientes válidos.
-
 ## Arquivos
 
 - `index.js`: classes, validações, quatro cenários de teste e lista de clientes.
